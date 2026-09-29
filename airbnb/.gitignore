@@ -1,0 +1,29 @@
+# dbt generated artifacts
+target/
+dbt_packages/
+dbt_modules/
+logs/
+*.log
+
+# Local dbt profiles and user state
+profiles.yml
+profiles.local.yml
+.user.yml
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+
+# Local data extracts and databases
+data/
+exports/
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
