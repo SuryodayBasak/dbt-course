@@ -1,0 +1,62 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.example
+*.swp
+
+# dbt generated artifacts
+**/target/
+**/dbt_packages/
+**/dbt_modules/
+**/logs/
+*.log
+
+# Local dbt profiles and user state
+**/profiles.yml
+**/profiles.local.yml
+**/.user.yml
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.crt
+*.jks
+*.keystore
+secrets/
+credentials/
+*_secret.*
+*_secrets.*
+*_credential.*
+*_credentials.*
+
+# Local data extracts and databases
+data/
+exports/
+*.duckdb
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.avro
+*.orc
+*.feather
